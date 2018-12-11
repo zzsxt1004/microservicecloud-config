@@ -1,10 +1,10 @@
 spring:
-  profiles: 
+  profiles:
     active: dev
 ---
-server:
+server: 
   port: 8201
-spring:
+spring:   
   profiles: dev #开发环境
   application:
     name: microservicecloud-config-client
@@ -16,11 +16,10 @@ eureka:
 server: 
   port: 8202
 spring:   
-  profiles: test #开发环境
+  profiles: test #测试环境
   application:
     name: microservicecloud-config-client
 eureka:
   client:
     service-url:
       defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka
-      
